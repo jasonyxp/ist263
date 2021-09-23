@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Contact</title>
+    </head>
+
+    <body>
+        <h1>Contact</h1>
+        <p>Xiaoping Yuan</p>
+        <br>
+        <p>919 E Genesee St<br>Syracuse,NY 13210</p>      
+        <a href="mailto:xyuan16@syr.edu">xyuan16@syr.edu</a>      
+        <br>
+        <br>
+        <a href="http://www.linkedin.com/in/xpy" target="_blank">My Linkedin</a>]
+        <br>
+        <a href ="http://www.linkedin.com/in/xpy" target="_blank">
+            <img SRC="../images/LinkedIn-Logos/LI-In-Bug.png" width="200" height="150" class="picture" alt="My Linkedin">
+        </a>
+        <br>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11662.937710515047!2d-76.1369275!3d43.0470189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd40b95247ee9bf56!2sTheory%20Syracuse!5e0!3m2!1szh-CN!2sus!4v1631801229511!5m2!1szh-CN!2sus" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+
+        <br>
+        <form action = "mailto:xyuan16@syr.edu" method="POST">
+            <label for ="name">name</label>
+            <input type="text" id="name" name="name">
+            <br>
+            <label for='contact'>Way of contact</label>
+                <select id="contact" name="contact">
+                    <option value="email">email</option>
+                    <option value="phone">phone</option>
+                    <option value="wechat">wechat</option>
+                    <option value="others">others</option>
+                </select>
+            <br>
+            <label for="informations">Contact informations:</label>
+            <textarea id="informations" name="informations">
+                Write your contact informations here
+            </textarea>
+            <input type="submit" value="send informations">
+        </form>
+    </body>
+</html>
