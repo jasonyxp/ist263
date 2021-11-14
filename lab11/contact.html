@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .location {background-color: #cce5ff; border-radius: 1em; margin: 10px; padding: 20px;}
+
+            .flex {display: flex; 
+                background-color: #cce5ff; 
+                border-radius: 1em; 
+                margin: 10px; 
+                padding: 20px;
+                flex-wrap: wrap;
+            }
+            .map {flex: 1; order: 2;}
+            .submission{flex: 1; order: 1;}
+        </style>
+    </head>
+
+    <body>
+        <a id="skip" href="#content">Skip to Content</a>
+        <nav>
+            <a href="https://jasonyxp.github.io/ist263/lab06/yuan-bio.html">Home</a>
+            <span>|</span>
+            <a href="https://jasonyxp.github.io/ist263/lab07/skills.html">Skills</a>
+            <span>|</span>
+            <a href="https://jasonyxp.github.io/ist263/lab07/contact.html">Contact</a>
+        </nav>
+        <a id="content"></a>
+        <h1>Contact</h1>
+        <div class="location">
+            <p>Xiaoping Yuan</p>
+            <p>919 E Genesee St<br>Syracuse,NY 13210</p>      
+            <a href="mailto:xyuan16@syr.edu">xyuan16@syr.edu</a>      
+            <br>
+            <br>
+            <a href="http://www.linkedin.com/in/xpy" target="_blank">[My Linkedin]</a>
+            <br>
+            <a href ="http://www.linkedin.com/in/xpy" target="_blank">
+                <img SRC="../images/logo-sized.png" width="200" height="150" class="picture" alt="My Linkedin">
+            </a>
+        </div>
+        <br>
+        <br>
+        <div class="flex">
+            <br>
+            <div class="submission">
+                <form action = "mailto:xyuan16@syr.edu" method="POST">
+                    <label for ="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <br>
+                    <label for='contact'>Way of contact:</label>
+                    <br>
+                        <select id="contact" name="contact">
+                            <option value="email">email</option>
+                            <option value="phone">phone</option>
+                            <option value="wechat">wechat</option>
+                            <option value="others">others</option>
+                        </select>
+                    <br>
+                    <br>
+                    <label for="informations">Contact informations:</label>
+                    <br>
+                    <textarea id="informations" name="informations">
+                        Write your contact informations here
+                    </textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="send informations">
+                </form>
+            </div>
+            <br>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11662.937710515047!2d-76.1369275!3d43.0470189!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd40b95247ee9bf56!2sTheory%20Syracuse!5e0!3m2!1szh-CN!2sus!4v1631801229511!5m2!1szh-CN!2sus" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </body>
+</html>
