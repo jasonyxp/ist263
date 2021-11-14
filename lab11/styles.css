@@ -21,13 +21,13 @@ p , ol, li, nav, a, div {
 }
 
 nav {
-    background-color: #c5c3c3;
+    background-color: #fdfdfd;
     padding: 10px;
     margin-bottom: 30px;
 }
 nav a {
     font-size: 1.5vw;
-    color: #c27005;
+    color: #2f03a7a8;
 }
 nav a:hover {
     background-color: #FFF338;
