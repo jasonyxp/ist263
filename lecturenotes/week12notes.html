@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // this is where our Javascript goes
+        // every line of Javascript needs a ; at the end
+        function firstFunction () {
+            alert('Hello World!');
+        }
+        // functions are named blocks of code
+        // you find errors in the console by inspecting
+        function secondFunction () {
+            alert('Second alter.');
+        }
+        function passwordMessage () {
+            alert('You did not type a password.');
+        }
+    </script>
+</head>
+<body onload="firstFunction();">
+    <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+
+    <a href="" onclick="secondFunction();">This is an alert that will say second alert</a>
+    <!-- onclick is an event, it will run the code inside secondFunction -->
+
+    <form>
+        <label for="username">Username: </label><br>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Password: </label><br>
+        <input type="text" name="password" id="password" onblur="passwordMessage();"><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
