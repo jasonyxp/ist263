@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
@@ -7,7 +7,43 @@
     "Restaurant name" - Home page
     </title>
     <style>
+        body{
+            background-color: #e0e0e0;
+        }
         table, th, td {border: 1px solid black}
+        .information {
+            display: flex;
+        }
+        .main {
+            display: flex;
+         } 
+        .menu {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+        }
+        .leftimages {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+         } 
+        .rightimages {
+            order: 3;
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+        }
+        .pay {
+            order: 4;
+            display: flex;
+            flex-direction: column;
+        }
+        img {
+            width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -17,103 +53,111 @@
         <a href="https://jasonyxp.github.io/ist263/lab07/skills.html">About Us</a>
     </nav>
     <hr>
-    <h1>
-        Restaurant name
-    </h1>
-    <img src="" alt="Restaurant photo">
-    <br>
-    <a>Phone number: (315)XXX-XXXX <br> Address: 
-    </a>
-    <hr>
-    <div>
-        <h2>Menu</h2>
-        <input type="text" placeholder="Search..">
-        <!-- This is for menu.
-        <div>
-            <button type="button" class="collapsible">Open Collapsible</button>
-            <div class="content">
-            <p>Lorem ipsum...</p>
-            </div>
-        </div> 
-        -->
-        <table>
-            <caption>Appetizer</caption>
-            <tr>
-                <th>Food</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <th>Steamed chicken dumpling</th>
-                <th>$5.99</th>
-            </tr>
-            <tr>
-                <th>Fried pork dumpling</th>
-                <th>$6.99</th>
-            </tr>
-            <tr>
-                <th>Seasamed noodles</th>
-                <th>$4.99</th>
-            </tr>
-        </table>
+    <div class="information">
+        <h1>
+            Restaurant name
+        </h1>
+        <img src="" alt="Restaurant photo">
         <br>
-        <table>
-            <caption>Main</caption>
-            <tr>
-                <th>Sautéed Diced Chicken, Sichuan Style</th>
-                <th>$15.99</th>
-            </tr>
-            <tr>
-                <th>Yuxiang Shredded Pork</th>
-                <th>$12.99</th>
-            </tr>
-            <tr>
-                <th>Braised Spare Ribs in Brown Sauce</th>
-                <th>$15.99</th>
-            </tr>
-            <tr>
-                <th>Chicken Vermicelli Casserole</th>
-                <th>$14.99</th>
-            </tr>
-            <tr>
-                <th>Sautéed Pork Intestines with Hot Pepper</th>
-                <th>$16.99</th>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <caption>Vegetable</caption>
-            <tr>
-                <th>Sautéed greens</th>
-                <th>$8.99</th>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <caption>Soup</caption>
-            <tr>
-                <th>Chicken soup</th>
-                <th>$11.99</th>
-            </tr>
-            <tr>
-                <th>Lotus Seeds and White Fungus Soup</th>
-                <th>$10.99</th>
-            </tr>
-        </table>
-
-        <img src="../images/project/spicychicken.jpg" alt="Sautéed Diced Chicken">
-        <img src="../images/project/yuxiangpork.jpg" alt="Yuxiang Shredded Pork">
-        <img src="../images/project/ribs.jpg" alt="Braised Spare Ribs">
-        <img src="../images/project/vermicelli.jpg" alt="Chicken vermicelli cassrole">
-        <img src="../images/project/intestines.jpg" alt="Sautéed Pork Intestines">
-        <img src="../images/project/greens.jpg" alt="Sautéed greens">
+        <a>Phone number: (315)XXX-XXXX <br> Address: 
+        </a>
     </div>
+    <hr>
+    <div class="main">
+        <div class="menu">
+            <h2>Menu</h2>
+            <input type="text" placeholder="Search..">
+            <!-- This is for menu.
+            <div>
+                <button type="button" class="collapsible">Open Collapsible</button>
+                <div class="content">
+                <p>Lorem ipsum...</p>
+                </div>
+            </div> 
+            -->
+            <table>
+                <caption>Appetizer</caption>
+                <tr>
+                    <th>Food</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <th>Steamed chicken dumpling</th>
+                    <th>$5.99</th>
+                </tr>
+                <tr>
+                    <th>Fried pork dumpling</th>
+                    <th>$6.99</th>
+                </tr>
+                <tr>
+                    <th>Seasamed noodles</th>
+                    <th>$4.99</th>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <caption>Main</caption>
+                <tr>
+                    <th>Sautéed Diced Chicken, Sichuan Style</th>
+                    <th>$15.99</th>
+                </tr>
+                <tr>
+                    <th>Yuxiang Shredded Pork</th>
+                    <th>$12.99</th>
+                </tr>
+                <tr>
+                    <th>Braised Spare Ribs in Brown Sauce</th>
+                    <th>$15.99</th>
+                </tr>
+                <tr>
+                    <th>Chicken Vermicelli Casserole</th>
+                    <th>$14.99</th>
+                </tr>
+                <tr>
+                    <th>Sautéed Pork Intestines with Hot Pepper</th>
+                    <th>$16.99</th>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <caption>Vegetable</caption>
+                <tr>
+                    <th>Sautéed greens</th>
+                    <th>$8.99</th>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <caption>Soup</caption>
+                <tr>
+                    <th>Chicken soup</th>
+                    <th>$11.99</th>
+                </tr>
+                <tr>
+                    <th>Lotus Seeds and White Fungus Soup</th>
+                    <th>$10.99</th>
+                </tr>
+            </table>
+        </div>
 
-    <div>
+        <div class="leftimages">
+            <img src="../images/project/spicychicken.jpg" alt="Sautéed Diced Chicken">
+            <img src="../images/project/yuxiangpork.jpg" alt="Yuxiang Shredded Pork">
+            <img src="../images/project/ribs.jpg" alt="Braised Spare Ribs">
+        </div>
+        <div class="rightimages">
+            <img src="../images/project/vermicelli.jpg" alt="Chicken vermicelli cassrole">
+            <img src="../images/project/intestines.jpg" alt="Sautéed Pork Intestines">
+            <img src="../images/project/greens.jpg" alt="Sautéed greens">
+        </div>
+    
+
+    <div class="pay">
         <h2>Cart</h2>
 
         <input type="submit" value="Pay">
     </div>
-
+    </div>
 
 </body>
 </html>
