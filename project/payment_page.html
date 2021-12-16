@@ -1,21 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>
-    "Restaurant name" - Payment
+    Yue - Payment
     </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card_payment{
+            display: none;
+        }
+    </style>
+    <script>
+        function payments() {
+            if (document.getElementById("payment_method").style.getPropertyValue('value') == 'card') {
+                document.getElementById("card_payment").style.display = 'block'
+            }
+            else if(document.getElementById("payment_method").style.getPropertyValue('value') == 'paypal'){
+                document.getElementById("pay").style.action = 'https://www.paypal.com/us/home'
+            }
+        }
+        function check() {
+            if (document.getElementById("payment_method").style.getPropertyValue('value') == 'payal') {
+                document.getElementById("pay").style.action = 'https://www.paypal.com/us/home'
+            }
+        }
+    </script>
 </head>
 <body>
-    <form action:"" method="POST">
-        <label for='payment_method'>Select your payment method</label>
-            <select name="payment_method" id="payment_method">
-                <option value="card">Credit/Debit Card</option>
-                <option value="paypal">PayPal</option>    
-                <option value="wechat">Wechat Pay</option>
-                <option value="ali">Ali Pay</option>
-            </select>
+    <nav>
+        <a href="https://jasonyxp.github.io/ist263/project/">Home</a>
+        <span>|</span>
+        <a href="https://jasonyxp.github.io/ist263/project/about_us_page.html">About Us</a>
+    </nav>
+    <hr>
+    <div class="information">
+        <h1>
+            Yue
+        </h1>
+        <img src="../images/project/logo.png" class="logo" alt="Restaurant photo">
         <br>
+        <a>Phone number: (315)XXX-XXXX <br> Address:<br> 945 E Genesee St, Syracuse, NY 13210
+        </a>
+    </div>
+    <br>
+    <hr>
+    <div class="main">
+        <p>Select your payment method:</p>
+        <input type= "radio" id="card" name="payment_method" value="Credit/Debit Card">
+        <label for="card">Credit/Debit Card</label>
+        <br>
+        <input type= "radio" id="paypal" name="payment_method" value="PayPal">
+        <label for="paypal"><img src="../images/project/paypal.jpg" class="paypallogo" alt="PayPal Logo"></label>
+        <br>
+        <input type= "radio" id="wechat" name="payment_method" value="Wecha tPay">
+        <label for="wechat"><img src="../images/project/wechat.png" class="wechatlogo" alt="Wechat Pay Logo"></label>
+        <br>
+        <input type= "radio" id="ali" name="payment_method" value="Ali Pay">
+        <label for="ali"><img src="../images/project/ali.png" class="alilogo" alt="Alipay Logo"></label>
+        <br>
+        <br>
+    </div>
+    <div class="card_payment">
         <label for="card number">Card number:</label>
         <input type="text" id="card number" name="card number">
         <label for="card holder">Name of card holder:</label>
@@ -24,6 +71,10 @@
         <input type="text" id="expiry date" name="expiry date">
         <label for="cvv">CVV code:</label>
         <input type="text" id="cvv" name="cvv">
+    </div>
+    <br>
+    <form class="pay" method="get" id="payweb" action="https://jasonyxp.github.io/ist263/project/payment_page.html">
+        <button type="submit" onclick="">Pay</button>
     </form>
 
 </body>

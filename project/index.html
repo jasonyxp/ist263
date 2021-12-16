@@ -4,19 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>
-    "Restaurant name" - Home page
+    Yue - Home page
     </title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body{
-            background-color: #e0e0e0;
-        }
         table, th, td {border: 1px solid black}
-        .information {
-            display: flex;
-        }
-        .main {
-            display: flex;
-         } 
         .menu {
             order: 2;
             display: flex;
@@ -41,28 +33,22 @@
             display: flex;
             flex-direction: column;
         }
-        img {
-            width: 300px;
-        }
-        .logo {
-            padding: 10px;
-        }
     </style>
 </head>
 <body>
     <nav>
-        <a href="https://jasonyxp.github.io/ist263/lab06/yuan-bio.html">Home</a>
+        <a href="https://jasonyxp.github.io/ist263/project/">Home</a>
         <span>|</span>
-        <a href="https://jasonyxp.github.io/ist263/lab07/skills.html">About Us</a>
+        <a href="https://jasonyxp.github.io/ist263/project/about_us_page.html">About Us</a>
     </nav>
     <hr>
     <div class="information">
         <h1>
-            Restaurant name
+            Yue
         </h1>
         <img src="../images/project/logo.png" class="logo" alt="Restaurant photo">
         <br>
-        <a>Phone number: (315)XXX-XXXX <br> Address: 
+        <a>Phone number: (315)XXX-XXXX <br> Address:<br> 945 E Genesee St, Syracuse, NY 13210
         </a>
     </div>
     <hr>
@@ -158,7 +144,9 @@
     <div class="pay">
         <h2>Cart</h2>
 
-        <input type="submit" value="Pay">
+        <form method="get" action="https://jasonyxp.github.io/ist263/project/payment_page.html">
+            <button type="submit">Pay</button>
+        </form>
     </div>
     </div>
 

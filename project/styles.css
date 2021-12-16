@@ -1,0 +1,18 @@
+body{
+    background-color: #e0e0e0;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+ } 
+.information {
+    display: flex;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+img {
+    width: 300px;
+}
+.logo {
+    padding: 20px;
+}

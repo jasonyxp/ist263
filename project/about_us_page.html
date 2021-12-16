@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>
-    "Restaurant name" - About Us page
+    Yue - About Us page
     </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .review{
+            flex-basis: 66%;
+            padding-left: 20px;
+            order: 1;
+        }
+        .location{
+            flex-basis: 33%;
+            order: 2;
+        }
+    </style>
 </head>
 <body>
-    <h1>"Restaurant name"</h1>
-    <h2>Address:XXXXXXXX</h2>
-    <h2>Phone number:(XXX)XXX-XXXX</h2>
+    <nav>
+        <a href="https://jasonyxp.github.io/ist263/project/">Home</a>
+        <span>|</span>
+        <a href="https://jasonyxp.github.io/ist263/project/about_us_page.html">About Us</a>
+    </nav>
+    <hr>
+    <div class="information">
+        <h1>
+            Yue
+        </h1>
+        <img src="../images/project/logo.png" class="logo" alt="Restaurant photo">
+        <br>
+        <a>Phone number: (315)XXX-XXXX <br> Address:<br> 945 E Genesee St, Syracuse, NY 13210
+        </a>
+    </div>
     <br>
-    <h1>Location</h1>
-    <iframe src="google map location" width="400" height="300" style="border:0;" allowfullscreen=""></iframe>
+    <hr>
     <br>
-    <h1>Reviews</h1>
-    <p>This reasturant is XXXXXXXXXXX.</p>
-    <br>
-    <p>I like their XXXXXXXXXX.</p>
+    <div class="main">
+        <div class="review">
+            <h1>Reviews</h1>
+            <p>This reasturant is XXXXXXXXXXX.</p>
+            <br>
+            <p>I like their XXXXXXXXXX.</p>
+            <br>
+            <div class="comment">
+                <textarea class="comment-send-input" name="comment" form="commentForm" cols="80" rows="5" placeholder="Type your comments here."></textarea>
+                <br>
+                    <input class="comment-send-button" type="submit" value="Upload Comment">
+            </div>
+        </div>    
+        <div class="location">
+            <h1>Location</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.9587777405635!2d-76.13760356629253!3d43.04690674337446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79718761939781fb!2zNDPCsDAyJzQ5LjQiTiA3NsKwMDgnMTIuMSJX!5e0!3m2!1szh-CN!2sus!4v1639625222006!5m2!1szh-CN!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
 </body>
 </html>
