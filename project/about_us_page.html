@@ -46,14 +46,16 @@
             <p>I like their XXXXXXXXXX.</p>
             <br>
             <div class="comment">
-                <textarea class="comment-send-input" name="comment" form="commentForm" cols="80" rows="5" placeholder="Type your comments here."></textarea>
-                <br>
-                    <input class="comment-send-button" type="submit" value="Upload Comment">
+                <form id="commentForm" method="GET" action="http://127.0.0.1:8888/comment">
+                    <textarea class="comment-send-input" name="comment" form="commentForm" cols="80" rows="5" placeholder="Type your comments here."></textarea>
+                    <br>
+                        <input class="comment-send-button" type="submit" value="Upload Comment">
+                </form>
             </div>
         </div>    
         <div class="location">
             <h1>Location</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.9587777405635!2d-76.13760356629253!3d43.04690674337446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79718761939781fb!2zNDPCsDAyJzQ5LjQiTiA3NsKwMDgnMTIuMSJX!5e0!3m2!1szh-CN!2sus!4v1639625222006!5m2!1szh-CN!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.9587777405635!2d-76.13760356629253!3d43.04690674337446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79718761939781fb!2zNDPCsDAyJzQ5LjQiTiA3NsKwMDgnMTIuMSJX!5e0!3m2!1szh-CN!2sus!4v1639625222006!5m2!1szh-CN!2sus" width="600" height="450" style="border:0;" allowfullscreen="" ></iframe>
         </div>
     </div>
 </body>
